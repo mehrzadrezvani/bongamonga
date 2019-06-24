@@ -1,0 +1,19 @@
+.btn {
+    @include flex('', space-between, center, '', '');
+
+    &.white-bordered {
+
+        border: 2px solid $white;
+        padding: .5rem 3rem;
+        border-radius: $border-radius*3;
+        font-size: 1.1rem;
+
+
+        p {
+            padding-right: 1rem;
+            color: $white;
+        }
+    }
+
+    .purplebordered {}
+}
