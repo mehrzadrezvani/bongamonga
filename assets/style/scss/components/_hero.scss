@@ -1,12 +1,17 @@
 .heroCont {
-  width: 100%;
-  height: calc(100vh - 7.3rem);
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 4rem;
-  background-image: url('./../../../../assets/images/hero-bg.png');
-  background-position: center;
-  background-size: cover;
-  background-repeat: no-repeat;
+  background-color: $purple;
+  height: calc(100vh - 6rem);
 
+  .container {
+    width: 100%;
+    height: calc(100vh - 8rem);
+    position: relative;
+    overflow: hidden;
+    margin-bottom: 4rem;
+    background-image: url('./../../../../assets/images/hero-bg.png');
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-color: $purple;
+  }
 }
