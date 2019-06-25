@@ -2,7 +2,76 @@
     background-color: $purple;
     position: relative;
     font-size: 1.7rem;
-    margin-top: 2rem;
+    margin-top: 15rem;
+    padding-bottom: 5rem;
 
-    
+    .row {
+        @include flex('', space-between, '', '', '');
+
+        .description {
+            @include flex(column, center, center, 0 1 33%, '');
+
+            margin-top: 3rem;
+
+            .logo {
+                @include flex('', center, center, 0 1 33%, '');
+                padding: 3rem;
+
+                img {
+                    width: 80%;
+                }
+            }
+
+            .text {
+                font-size: 1.2rem;
+                text-align: right;
+                color: $white;
+            }
+        }
+
+        .search {
+            @include flex(column, center, center, 0 1 33%, '');
+            position: relative;
+
+            img {
+                position: absolute;
+                top: -40%;
+            }
+
+            p {
+                color: $white;
+            }
+
+            &>.description {
+                margin-top: 15rem;
+                width: 100%;
+
+                >.btn {
+                    padding: 1rem 5rem;
+                    margin-top: 2rem;
+                }
+            }
+
+
+        }
+
+        .socialNetworks {
+            @include flex(column, center, center, 0 1 33%, '');
+
+            .namad {
+                @include flex(column, center, center, '', '');
+                p{
+                    color :$white;
+                    margin-top: 2rem;
+                    margin-bottom: 1rem;
+                }
+
+                img{
+                    
+                }
+            }
+        }
+
+    }
+
 }

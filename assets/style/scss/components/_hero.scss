@@ -1,6 +1,8 @@
 .heroCont {
   background-color: $purple;
   height: calc(100vh - 6rem);
+  box-shadow: 0.2rem 0.5rem .4rem $font_color_gray_light;
+
 
   .container {
     width: 100%;
@@ -13,6 +15,7 @@
     background-size: cover;
     background-repeat: no-repeat;
     background-color: $purple;
+    background-attachment: fixed;
 
     @include flex(column, center, center, '', '');
 
@@ -22,18 +25,22 @@
       transition: all 0.5s;
 
       &>.item {
-        @include flex('', space-evenly, center, '', '');
+        @include flex('', space-between, center, '', '');
         width: 20%;
         padding: 1rem 2rem;
         font-size: 1.5rem;
         border-radius: $border_radius*2.5;
         background-color: $purple;
 
+        img {
+          width: 5rem;
+        }
+
         p {
           color: $white;
         }
 
-        &:not(:first-child) {
+        &:not(:last-child) {
           margin: 1rem;
         }
       }
@@ -52,47 +59,109 @@
 
     .searchContainer {
       background-color: rgba(255, 255, 255, 0.85);
-      width: 80%;
       border-radius: $border_radius*2.5;
-      @include flex(column, center, center, '', '');
+      width: 80%;
+      @include flex(column, '', center, '', '');
 
-      .search {
-        @include flex('', center, center, '', '');
+      .cont {
+        width: 70%;
+        @include flex(column, '', center, '', '');
 
-      }
-
-      .categories {
-        @include flex('', center, center, '', '');
-        width: 100%;
-
-        .category {
-          @include flex('', space-between, center, '', '');
-          padding: 1rem;
-          margin: 2rem 1rem;
+        .search {
+          @include flex('', center, center, '', '');
+          width: 100%;
+          margin-top: 10rem;
+          margin-bottom: 1rem;
           border-radius: $border_radius*2.5;
-          width: 20%;
-          background-color: $white;
+          box-shadow: 0.2rem 0.3rem 0.2rem $font_color_gray_light;
 
-          img {}
-        }
-      }
+          input {
+            outline: none;
+            border: none;
+            padding: 1.35rem;
+            border-top-right-radius: 2.5rem;
+            border-bottom-right-radius: 2.5rem;
+            text-align: right;
+            width: 100%;
 
-      .advanced-search {
-        @include flex('', center, center, '', '');
-        width: 100%;
+            &::placeholder {
+              direction: rtl;
+              color: $font_color_gray_light;
+            }
 
-        p {
-          position: relative;
-          color: $purple;
-
-          &:before {
-            content: '+';
-            color: $purple;
-            position: absolute;
-            top: 50%;
-            right: -2rem;
-            transform: translate(0, -50%);
+            &:placeholder-shown {}
           }
+
+          &-btn {
+            width: 5%;
+            @include flex('', center, center, '', '');
+            background-color: $white;
+            border-top-left-radius: 2.5rem;
+            border-bottom-left-radius: 2.5rem;
+            cursor: pointer;
+
+            img {
+              padding: .9rem 1rem;
+              width: 4.2rem;
+            }
+          }
+        }
+
+        .categories {
+          @include flex('', space-between, center, '', '');
+          width: 100%;
+
+          .category {
+            @include flex('', space-between, center, '', '');
+            border-radius: $border_radius*2.5;
+            width: 23%;
+            background-color: $white;
+            overflow: hidden;
+
+            p {
+              color: $font_color_gray_light;
+              font-size: 1.2rem;
+            }
+
+            .icon {
+              height: 3.5rem;
+              width: 3.5rem;
+              padding: .5rem;
+              background-color: $gray_bg;
+              border-radius: 50%;
+              margin: 0.1rem;
+            }
+
+            .arrow {
+              width: 1.2rem;
+              margin: 1rem;
+            }
+          }
+        }
+
+        .advanced-search {
+          @include flex('', center, center, '', '');
+          width: 100%;
+          margin-top: 2rem;
+
+          p {
+            position: relative;
+            color: $purple;
+
+            &:before {
+              content: '+';
+              color: $purple;
+              position: absolute;
+              top: 50%;
+              right: -2rem;
+              transform: translate(0, -50%);
+            }
+          }
+        }
+
+        &>.btn {
+          margin: 4rem 0;
+          align-self: flex-start;
         }
       }
     }

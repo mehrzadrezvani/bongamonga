@@ -1,0 +1,56 @@
+.itemsCont {
+    margin-top: 2rem;
+    margin-bottom: 7rem;
+
+    .row {
+        @include flex(column, center, flex-end, '', '');
+
+
+        .titles {
+            width: 100%;
+            @include flex('', space-between, center, '', '');
+            margin-bottom: 2rem;
+
+            .title {
+                @include flex('', '', center, '', '');
+
+                img {
+                    width: 4rem;
+                }
+
+                p {
+                    margin-right: 1rem;
+                    color: $purple;
+                    font-size: 1.5rem;
+                    font-weight: 600;
+                }
+            }
+        }
+
+        .items{
+            @include flex('', space-between, center, '', '');
+            width: 100%;
+
+            .item {
+                @include flex('', flex-end, flex-end, '', '');
+                background-position: center;
+                background-size: cover;
+                background-repeat: no-repeat;
+    
+                p{
+    
+                    color: $white;
+                }
+                width: 22%;
+                height: 35rem;
+                border-radius: $border_radius*3;
+                padding: 2rem;
+                text-align: right;
+    
+                .name{
+                    font-weight: 500;
+                }
+            }
+        }
+    }
+}
