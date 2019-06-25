@@ -27,7 +27,7 @@
       &>.item {
         @include flex('', space-between, center, '', '');
         width: 20%;
-        padding: 1rem 2rem;
+        padding: 1rem 3rem;
         font-size: 1.5rem;
         border-radius: $border_radius*2.5;
         background-color: $purple;

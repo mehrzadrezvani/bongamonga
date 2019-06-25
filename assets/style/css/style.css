@@ -293,6 +293,8 @@ header {
         .footer .row .search > .description > .btn {
           padding: 1rem 5rem;
           margin-top: 2rem; }
+          .footer .row .search > .description > .btn > p {
+            padding: 0; }
     .footer .row .socialNetworks {
       display: flex;
       flex: 0 1 33%;
@@ -341,7 +343,7 @@ header {
         justify-content: space-between;
         align-items: center;
         width: 20%;
-        padding: 1rem 2rem;
+        padding: 1rem 3rem;
         font-size: 1.5rem;
         border-radius: 2.5rem;
         background-color: #4925E1; }
@@ -456,7 +458,6 @@ header {
   .btn.white-bordered {
     border: 2px solid #ffffff; }
     .btn.white-bordered p {
-      padding-right: 1rem;
       color: #ffffff; }
   .btn.purple {
     cursor: pointer;
