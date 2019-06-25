@@ -267,7 +267,75 @@ header {
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
-    background-color: #4925E1; }
+    background-color: #4925E1;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center; }
+    .heroCont .container .title {
+      width: 80%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      transition: all 0.5s; }
+      .heroCont .container .title > .item {
+        display: flex;
+        justify-content: space-evenly;
+        align-items: center;
+        width: 20%;
+        padding: 1rem 2rem;
+        font-size: 1.5rem;
+        border-radius: 2.5rem;
+        background-color: #4925E1; }
+        .heroCont .container .title > .item p {
+          color: #ffffff; }
+        .heroCont .container .title > .item:not(:first-child) {
+          margin: 1rem; }
+      .heroCont .container .title .active {
+        background-color: #ffffff; }
+        .heroCont .container .title .active p {
+          color: #4925E1; }
+    .heroCont .container .searchContainer {
+      background-color: rgba(255, 255, 255, 0.85);
+      width: 80%;
+      border-radius: 2.5rem;
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: center; }
+      .heroCont .container .searchContainer .search {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+      .heroCont .container .searchContainer .categories {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%; }
+        .heroCont .container .searchContainer .categories .category {
+          display: flex;
+          justify-content: space-between;
+          align-items: center;
+          padding: 1rem;
+          margin: 2rem 1rem;
+          border-radius: 2.5rem;
+          width: 20%;
+          background-color: #ffffff; }
+      .heroCont .container .searchContainer .advanced-search {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        width: 100%; }
+        .heroCont .container .searchContainer .advanced-search p {
+          position: relative;
+          color: #4925E1; }
+          .heroCont .container .searchContainer .advanced-search p:before {
+            content: '+';
+            color: #4925E1;
+            position: absolute;
+            top: 50%;
+            right: -2rem;
+            transform: translate(0, -50%); }
 
 .btn {
   display: flex;
