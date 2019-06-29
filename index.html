@@ -6,6 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <meta http-equiv="X-UA-Compatible" content="ie=edge" />
   <link rel="stylesheet" href="./assets/style/css/owl.carousel.min.css" />
+  <link rel="stylesheet" href="./assets/style/css/icons.css" />
   <link rel="stylesheet" href="./assets/style/css/style.css" />
   <script src="./assets/js/jquery.min.js"></script>
   <script src="./assets/js/owl.carousel.min.js"></script>
@@ -23,7 +24,7 @@
         <div class="menu">
           <div class="btn white-bordered">
             <p>ورود / عضویت</p>
-            <img src="./assets/images/user.svg" alt="">
+            <span class="icon-image-4"></span>
           </div>
           <div class="menuItem"><a href="#">املاک من</a></div>
           <div class="menuItem"><a href="#">ثبت ملک </a></div>
@@ -36,13 +37,13 @@
   <section class="heroCont">
     <div class="container">
       <div class="title">
-        <div class="item selling-section active">
+        <div class="item selling-section active" data-src="selling-section">
           <p>برای اجاره</p>
-          <img src="./assets/images/rent.svg" alt="">
+          <span class="icon-rent"></span>
         </div>
-        <div class="item reting-section">
+        <div class="item renting-section" data-src="renting-section">
           <p>برای فروش</p>
-          <img src="./assets/images/building.svg" alt="">
+          <span class="icon-building"></span>
         </div>
       </div>
 
@@ -56,22 +57,22 @@
             <div class="category maxprice">
               <img class="icon" src="./assets/images/dollar-symbol.svg" alt="">
               <p>کمترین قیمت</p>
-              <img class="arrow" src="./assets/images/arrow-point-to-right.svg" alt="">
+              <span class="icon-arrow-point-to-right arrow"></span>
             </div>
             <div class="category minprice">
               <img class="icon" src="./assets/images/dollar-symbol.svg" alt="">
               <p>کمترین قیمت</p>
-              <img class="arrow" src="./assets/images/arrow-point-to-right.svg" alt="">
+              <span class="icon-arrow-point-to-right arrow"></span>
             </div>
             <div class="category bedrooms">
               <img class="icon" src="./assets/images/bed.svg" alt="">
               <p>تعداد اتاق </p>
-              <img class="arrow" src="./assets/images/arrow-point-to-right.svg" alt="">
+              <span class="icon-arrow-point-to-right arrow"></span>
             </div>
             <div class="category property">
               <img class="icon" src="./assets/images/house.svg" alt="">
               <p>نوع ملک</p>
-              <img class="arrow" src="./assets/images/arrow-point-to-right.svg" alt="">
+              <span class="icon-arrow-point-to-right arrow"></span>
             </div>
           </div>
 
@@ -100,27 +101,32 @@
       <div class="items">
         <div class="item"
           style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, black 100%), url('./assets/images/image-1.png')">
-          <div class="title"></div>
-          <div class="description">
-            <div class="name">
-              <p>آپارتمان دروس</p>
+          <div class="container">
+            <div class="description">
+              <div class="content name">
+                <p>آپارتمان دروس</p>
+              </div>
+              <div class="content  status">
+                <p>اجاره</p>
+              </div>
+              <div class="content area">
+                  <span class="icon-area"></span>
+                <p>متراژ</p>
+              </div>
+              <div class="content costs">
+                  <span class="icon-dollar-symbol"></span>
+                <p>۲.۵ میلیون ماهیانه</p>
+              </div>
+              <div class="content bedrooms">
+                  <span class="icon-opened-door-aperture"></span>
+                <p>۴خوابه</p>
+              </div>
+              <div class="content info">
+                  <span class="icon-home"></span>
+                <p>نوساز</p>
+              </div>
             </div>
-            <div class="status">
-              <p>اجاره</p>
-            </div>
-            <div class="area">
-              <p>متراژ</p>
-            </div>
-            <div class="costs">
-              <p>۲.۵ میلیون ماهیانه</p>
-            </div>
-            <div class="bedrooms">
-              <p>۴خوابه</p>
-            </div>
-            <div class="info">
-              <p>نوساز</p>
-            </div>
-            <div class="signiture">
+            <div class="content signiture">
               <div class="logo"><img src="./assets/images/company.svg" alt=""></div>
               <p>مشاورین یکم</p>
             </div>
@@ -128,27 +134,32 @@
         </div>
         <div class="item"
           style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, black 100%), url('./assets/images/image-2.png')">
-          <div class="title"></div>
-          <div class="description">
-            <div class="name">
-              <p>آپارتمان دروس</p>
+          <div class="container">
+            <div class="description">
+              <div class="content name">
+                <p>آپارتمان دروس</p>
+              </div>
+              <div class="content status">
+                <p>اجاره</p>
+              </div>
+              <div class="content area">
+                  <span class="icon-area"></span>
+                <p>متراژ</p>
+              </div>
+              <div class="content costs">
+                  <span class="icon-dollar-symbol"></span>
+                <p>۲.۵ میلیون ماهیانه</p>
+              </div>
+              <div class="content bedrooms">
+                  <span class="icon-opened-door-aperture"></span>
+                <p>۴خوابه</p>
+              </div>
+              <div class="content info">
+                  <span class="icon-home"></span>
+                <p>نوساز</p>
+              </div>
             </div>
-            <div class="status">
-              <p>اجاره</p>
-            </div>
-            <div class="area">
-              <p>متراژ</p>
-            </div>
-            <div class="costs">
-              <p>۲.۵ میلیون ماهیانه</p>
-            </div>
-            <div class="bedrooms">
-              <p>۴خوابه</p>
-            </div>
-            <div class="info">
-              <p>نوساز</p>
-            </div>
-            <div class="signiture">
+            <div class="content signiture">
               <div class="logo"><img src="./assets/images/company.svg" alt=""></div>
               <p>مشاورین یکم</p>
             </div>
@@ -156,27 +167,32 @@
         </div>
         <div class="item"
           style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, black 100%), url('./assets/images/image-3.png')">
-          <div class="title"></div>
-          <div class="description">
-            <div class="name">
-              <p>آپارتمان دروس</p>
+          <div class="container">
+            <div class="description">
+              <div class="content name">
+                <p>آپارتمان دروس</p>
+              </div>
+              <div class="content status">
+                <p>اجاره</p>
+              </div>
+              <div class="content area">
+                  <span class="icon-area"></span>
+                <p>متراژ</p>
+              </div>
+              <div class="content costs">
+                  <span class="icon-dollar-symbol"></span>
+                <p>۲.۵ میلیون ماهیانه</p>
+              </div>
+              <div class="content bedrooms">
+                  <span class="icon-opened-door-aperture"></span>
+                <p>۴خوابه</p>
+              </div>
+              <div class="content info">
+                  <span class="icon-home"></span>
+                <p>نوساز</p>
+              </div>
             </div>
-            <div class="status">
-              <p>اجاره</p>
-            </div>
-            <div class="area">
-              <p>متراژ</p>
-            </div>
-            <div class="costs">
-              <p>۲.۵ میلیون ماهیانه</p>
-            </div>
-            <div class="bedrooms">
-              <p>۴خوابه</p>
-            </div>
-            <div class="info">
-              <p>نوساز</p>
-            </div>
-            <div class="signiture">
+            <div class="content signiture">
               <div class="logo"><img src="./assets/images/company.svg" alt=""></div>
               <p>مشاورین یکم</p>
             </div>
@@ -184,27 +200,32 @@
         </div>
         <div class="item"
           style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, black 100%), url('./assets/images/image-4.png')">
-          <div class="title"></div>
-          <div class="description">
-            <div class="name">
-              <p>آپارتمان دروس</p>
+          <div class="container">
+            <div class="description">
+              <div class="content name">
+                <p>آپارتمان دروس</p>
+              </div>
+              <div class="content status">
+                <p>اجاره</p>
+              </div>
+              <div class="content area">
+                  <span class="icon-area"></span>
+                <p>متراژ</p>
+              </div>
+              <div class="content costs">
+                  <span class="icon-dollar-symbol"></span>
+                <p>۲.۵ میلیون ماهیانه</p>
+              </div>
+              <div class="content bedrooms">
+                  <span class="icon-opened-door-aperture"></span>
+                <p>۴خوابه</p>
+              </div>
+              <div class="content info">
+                  <span class="icon-home"></span>
+                <p>نوساز</p>
+              </div>
             </div>
-            <div class="status">
-              <p>اجاره</p>
-            </div>
-            <div class="area">
-              <p>متراژ</p>
-            </div>
-            <div class="costs">
-              <p>۲.۵ میلیون ماهیانه</p>
-            </div>
-            <div class="bedrooms">
-              <p>۴خوابه</p>
-            </div>
-            <div class="info">
-              <p>نوساز</p>
-            </div>
-            <div class="signiture">
+            <div class="content signiture">
               <div class="logo"><img src="./assets/images/company.svg" alt=""></div>
               <p>مشاورین یکم</p>
             </div>
@@ -213,7 +234,6 @@
       </div>
     </div>
   </section>
-
   <section class="itemsCont">
     <div class="row">
       <div class="titles">
@@ -228,27 +248,32 @@
       <div class="items">
         <div class="item"
           style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, black 100%), url('./assets/images/image-1.png')">
-          <div class="title"></div>
-          <div class="description">
-            <div class="name">
-              <p>آپارتمان دروس</p>
+          <div class="container">
+            <div class="description">
+              <div class="content name">
+                <p>آپارتمان دروس</p>
+              </div>
+              <div class="content  status">
+                <p>اجاره</p>
+              </div>
+              <div class="content area">
+                  <span class="icon-area"></span>
+                <p>متراژ</p>
+              </div>
+              <div class="content costs">
+                  <span class="icon-dollar-symbol"></span>
+                <p>۲.۵ میلیون ماهیانه</p>
+              </div>
+              <div class="content bedrooms">
+                  <span class="icon-opened-door-aperture"></span>
+                <p>۴خوابه</p>
+              </div>
+              <div class="content info">
+                  <span class="icon-home"></span>
+                <p>نوساز</p>
+              </div>
             </div>
-            <div class="status">
-              <p>اجاره</p>
-            </div>
-            <div class="area">
-              <p>متراژ</p>
-            </div>
-            <div class="costs">
-              <p>۲.۵ میلیون ماهیانه</p>
-            </div>
-            <div class="bedrooms">
-              <p>۴خوابه</p>
-            </div>
-            <div class="info">
-              <p>نوساز</p>
-            </div>
-            <div class="signiture">
+            <div class="content signiture">
               <div class="logo"><img src="./assets/images/company.svg" alt=""></div>
               <p>مشاورین یکم</p>
             </div>
@@ -256,27 +281,32 @@
         </div>
         <div class="item"
           style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, black 100%), url('./assets/images/image-2.png')">
-          <div class="title"></div>
-          <div class="description">
-            <div class="name">
-              <p>آپارتمان دروس</p>
+          <div class="container">
+            <div class="description">
+              <div class="content name">
+                <p>آپارتمان دروس</p>
+              </div>
+              <div class="content status">
+                <p>اجاره</p>
+              </div>
+              <div class="content area">
+                  <span class="icon-area"></span>
+                <p>متراژ</p>
+              </div>
+              <div class="content costs">
+                  <span class="icon-dollar-symbol"></span>
+                <p>۲.۵ میلیون ماهیانه</p>
+              </div>
+              <div class="content bedrooms">
+                  <span class="icon-opened-door-aperture"></span>
+                <p>۴خوابه</p>
+              </div>
+              <div class="content info">
+                  <span class="icon-home"></span>
+                <p>نوساز</p>
+              </div>
             </div>
-            <div class="status">
-              <p>اجاره</p>
-            </div>
-            <div class="area">
-              <p>متراژ</p>
-            </div>
-            <div class="costs">
-              <p>۲.۵ میلیون ماهیانه</p>
-            </div>
-            <div class="bedrooms">
-              <p>۴خوابه</p>
-            </div>
-            <div class="info">
-              <p>نوساز</p>
-            </div>
-            <div class="signiture">
+            <div class="content signiture">
               <div class="logo"><img src="./assets/images/company.svg" alt=""></div>
               <p>مشاورین یکم</p>
             </div>
@@ -284,27 +314,32 @@
         </div>
         <div class="item"
           style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, black 100%), url('./assets/images/image-3.png')">
-          <div class="title"></div>
-          <div class="description">
-            <div class="name">
-              <p>آپارتمان دروس</p>
+          <div class="container">
+            <div class="description">
+              <div class="content name">
+                <p>آپارتمان دروس</p>
+              </div>
+              <div class="content status">
+                <p>اجاره</p>
+              </div>
+              <div class="content area">
+                  <span class="icon-area"></span>
+                <p>متراژ</p>
+              </div>
+              <div class="content costs">
+                  <span class="icon-dollar-symbol"></span>
+                <p>۲.۵ میلیون ماهیانه</p>
+              </div>
+              <div class="content bedrooms">
+                  <span class="icon-opened-door-aperture"></span>
+                <p>۴خوابه</p>
+              </div>
+              <div class="content info">
+                  <span class="icon-home"></span>
+                <p>نوساز</p>
+              </div>
             </div>
-            <div class="status">
-              <p>اجاره</p>
-            </div>
-            <div class="area">
-              <p>متراژ</p>
-            </div>
-            <div class="costs">
-              <p>۲.۵ میلیون ماهیانه</p>
-            </div>
-            <div class="bedrooms">
-              <p>۴خوابه</p>
-            </div>
-            <div class="info">
-              <p>نوساز</p>
-            </div>
-            <div class="signiture">
+            <div class="content signiture">
               <div class="logo"><img src="./assets/images/company.svg" alt=""></div>
               <p>مشاورین یکم</p>
             </div>
@@ -312,27 +347,32 @@
         </div>
         <div class="item"
           style="background-image: linear-gradient(to bottom, rgba(0, 0, 0, 0) 20%, black 100%), url('./assets/images/image-4.png')">
-          <div class="title"></div>
-          <div class="description">
-            <div class="name">
-              <p>آپارتمان دروس</p>
+          <div class="container">
+            <div class="description">
+              <div class="content name">
+                <p>آپارتمان دروس</p>
+              </div>
+              <div class="content status">
+                <p>اجاره</p>
+              </div>
+              <div class="content area">
+                  <span class="icon-area"></span>
+                <p>متراژ</p>
+              </div>
+              <div class="content costs">
+                  <span class="icon-dollar-symbol"></span>
+                <p>۲.۵ میلیون ماهیانه</p>
+              </div>
+              <div class="content bedrooms">
+                  <span class="icon-opened-door-aperture"></span>
+                <p>۴خوابه</p>
+              </div>
+              <div class="content info">
+                  <span class="icon-home"></span>
+                <p>نوساز</p>
+              </div>
             </div>
-            <div class="status">
-              <p>اجاره</p>
-            </div>
-            <div class="area">
-              <p>متراژ</p>
-            </div>
-            <div class="costs">
-              <p>۲.۵ میلیون ماهیانه</p>
-            </div>
-            <div class="bedrooms">
-              <p>۴خوابه</p>
-            </div>
-            <div class="info">
-              <p>نوساز</p>
-            </div>
-            <div class="signiture">
+            <div class="content signiture">
               <div class="logo"><img src="./assets/images/company.svg" alt=""></div>
               <p>مشاورین یکم</p>
             </div>
@@ -342,8 +382,10 @@
     </div>
   </section>
 
+
   <div class="row">
-    <section class="mapLink" style="background-image: url('./assets/images/sss.png')">
+    <section class="mapLink"
+      style="background-image: linear-gradient(rgba(73, 37, 225, 0.7),rgba(73, 37, 225, 0.7)), url('./assets/images/sss.png')">
       <div class="title">
         <p>نقشه شهر از نگاه دیگر </p>
       </div>
@@ -364,9 +406,9 @@
           <img src="./assets/images/namad.svg" alt="">
           <p>با ما همراه باشید </p>
           <div class="links">
-            <img src="./assets/images/linkedIn.svg" alt="">
-            <img src="./assets/images/youtube.svg" alt="">
-            <img src="./assets/images/instagram.svg" alt="">
+            <a href="lnkedin.com"><span class="icon-LinkedIn"></span></a>
+            <a href="youtube.com"><span class="icon-YouTube"></span></a>
+            <a href="instagram.com"><span class="icon-Intsagram"></span></a>
           </div>
         </div>
       </div>

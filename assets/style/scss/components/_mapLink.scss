@@ -1,12 +1,12 @@
 .mapLink{
-    background-position: center;
-    background-size: cover;
-    background-repeat: no-repeat;
     height: 13.5rem;
+    align-self: center;
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
     border-radius: $border_radius*2.5;
     @include flex(column, center, center, '', '');
-    align-self: center;
-    
+
     .title{
         p{
             font-size: 1.7rem;

@@ -1,12 +1,12 @@
 {
     "name": "bongamonga",
     "version": "1.0.0",
-    "description": "E-Commmerce for tire",
+    "description": "E-Commmerce for houses",
     "main": "index.js",
     "scripts": {
         "watch:scss": "node-sass ./assets/style/scss/style.scss ./assets/style/css/style.css -w",
         "compile:scss": "node-sass ./assets/style/scss/style.scss ./assets/style/css/style.comp.css",
-        "concat:css": "concat -o assets/style/css/style.concat.css assets/style/css/owl.carousel.min.css ./assets/style/css/owl.theme.default.min.css ./assets/style/css/style.comp.css",
+        "concat:css": "concat -o assets/style/css/style.concat.css assets/style/css/owl.carousel.min.css ./assets/style/css/owl.theme.default.min.css ./assets/style/css/style.comp.css ./assets/style/css/icons.css",
         "prefix:css": "postcss --use autoprefixer -b \"last 10 versions\" ./assets/style/css/style.concat.css -o ././assets/style/css/style.prefix.css",
         "compress:css": "node-sass ./assets/style/css/style.prefix.css ./assets/style/css/style.css --output-style compressed",
         "build:css": "npm-run-all compile:scss concat:css prefix:css compress:css"

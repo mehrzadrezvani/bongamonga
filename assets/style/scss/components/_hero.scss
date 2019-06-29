@@ -31,9 +31,17 @@
         font-size: 1.5rem;
         border-radius: $border_radius*2.5;
         background-color: $purple;
+        border: 0.5rem double transparent;
+        color: $white;
+        transition: all 0.5s;
 
-        img {
+        &:hover{
+          border: 0.5rem double $white;
+        }
+
+        span {
           width: 5rem;
+          font-size: 5rem;
         }
 
         p {
@@ -47,13 +55,13 @@
 
       .active {
         background-color: $white;
+        color: $purple;
+        transition: all 0.3s;
 
         p {
           color: $purple;
         }
       }
-
-
 
     }
 
@@ -113,10 +121,11 @@
 
           .category {
             @include flex('', space-between, center, '', '');
+            box-shadow: 0.2rem 0.3rem 0.2rem $font_color_gray_light;
             border-radius: $border_radius*2.5;
-            width: 23%;
             background-color: $white;
             overflow: hidden;
+            width: 23%;
 
             p {
               color: $font_color_gray_light;
@@ -133,8 +142,9 @@
             }
 
             .arrow {
-              width: 1.2rem;
-              margin: 1rem;
+              font-size:  0.8rem;
+              margin: 1rem 2rem;
+              color: $purple;
             }
           }
         }
