@@ -1,5 +1,6 @@
 $(document).ready(function () {
   $('#sliders').owlCarousel({
+    loop: true,
     slideSpeed: 300,
     navSpeed: 1000,
     singleItem: true,
@@ -7,10 +8,7 @@ $(document).ready(function () {
     stagePadding: 0,
     nav: false,
     rewindSpeed: 500,
-    navText: [
-      "<img src='./assets/images/left-arrow.jpg'>",
-      "<img src='./assets/images/right-arrow.jpg'>"
-    ],
+    dots: true,
     responsive: {
       0: {
         items: 1
@@ -39,7 +37,7 @@ $(document).ready(function () {
     });
   });
 
-  $('.heroCont .container .title > .item').on('click', function(){
+  $('.heroCont .container .title > .item').on('click', function () {
     if ($('.heroCont .container .title > .item').has('active')) {
       $('.heroCont .container .title > .item ').removeClass('active').addClass('deactive');
     }

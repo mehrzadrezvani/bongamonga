@@ -195,7 +195,8 @@ button {
   outline: none; }
 
 body {
-  position: relative; }
+  position: relative;
+  background: #ECECEC; }
 
 header {
   background-color: #4925E1;
@@ -589,8 +590,9 @@ header {
       .itemsCont .row .titles .title {
         display: flex;
         align-items: center; }
-        .itemsCont .row .titles .title img {
-          width: 4rem; }
+        .itemsCont .row .titles .title span {
+          font-size: 5rem;
+          color: #4925E1; }
         .itemsCont .row .titles .title p {
           margin-right: 1rem;
           color: #4925E1;
@@ -669,5 +671,99 @@ header {
   .mapLink .btn {
     margin-top: 2rem;
     padding: 1 5rem; }
+
+.articlesCont {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  width: 100%;
+  margin: 5rem 0; }
+  .articlesCont #sliders {
+    width: 30%;
+    position: relative; }
+    .articlesCont #sliders .item {
+      background-color: #ffffff;
+      direction: rtl;
+      border-radius: 3rem;
+      width: 100%;
+      height: 51rem; }
+      .articlesCont #sliders .item .title {
+        padding: 1rem 2rem; }
+        .articlesCont #sliders .item .title p {
+          font-size: 1.6rem;
+          color: #4925E1; }
+      .articlesCont #sliders .item .description p {
+        padding: 0 2rem; }
+    .articlesCont #sliders .owl-dots {
+      position: absolute;
+      left: 50%;
+      transform: translate(-50%, -110%); }
+      .articlesCont #sliders .owl-dots button {
+        width: 10px;
+        height: 10px;
+        background-color: #e7e5e5;
+        opacity: 0.6;
+        margin: 1rem;
+        border-radius: 50%; }
+        .articlesCont #sliders .owl-dots button.active {
+          background-color: #acabab; }
+  .articlesCont .icons {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 3rem; }
+    .articlesCont .icons span {
+      width: 1.5rem;
+      height: 1.5rem;
+      background-color: #4925E1;
+      position: relative; }
+      .articlesCont .icons span:before {
+        content: '';
+        position: absolute;
+        top: -3rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: #4925E1; }
+      .articlesCont .icons span:after {
+        content: '';
+        position: absolute;
+        top: 3rem;
+        width: 1.5rem;
+        height: 1.5rem;
+        background-color: #4925E1; }
+  .articlesCont .articles {
+    background-color: #ffffff;
+    border-radius: 3rem;
+    padding: 2rem;
+    width: 60%; }
+    .articlesCont .articles .article {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: flex-start;
+      padding: 2rem 0; }
+      .articlesCont .articles .article:not(:last-child) {
+        border-bottom: 0.5px solid #4925E1; }
+      .articlesCont .articles .article .content {
+        display: flex;
+        justify-content: center;
+        flex-direction: row-reverse;
+        align-items: center;
+        width: 90%; }
+        .articlesCont .articles .article .content img {
+          width: 10rem;
+          height: 10rem;
+          border-radius: 2.5rem;
+          margin-left: 2rem; }
+        .articlesCont .articles .article .content .details {
+          direction: rtl; }
+          .articlesCont .articles .article .content .details .title {
+            padding: 1rem 0; }
+            .articlesCont .articles .article .content .details .title p {
+              font-size: 1.6rem;
+              color: #4925E1; }
+      .articlesCont .articles .article .date {
+        color: #D1D1D1; }
 
 /* pages */
