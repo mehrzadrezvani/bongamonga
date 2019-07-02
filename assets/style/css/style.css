@@ -143,7 +143,7 @@ p {
 
 @font-face {
   font-family: 'iransans';
-  src: url("./../../../fonts/iransans.otf"); }
+  src: url("../../fonts/iransans.otf"); }
 
 html {
   font-size: 62.5%; }
