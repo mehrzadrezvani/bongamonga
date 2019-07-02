@@ -6,6 +6,7 @@ $(document).ready(function () {
     singleItem: true,
     items: 1,
     stagePadding: 0,
+    margin: 15,
     nav: false,
     rewindSpeed: 500,
     dots: true,
