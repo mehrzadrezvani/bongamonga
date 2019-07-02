@@ -55,7 +55,7 @@
                     height: 30rem;
                     border-radius: $border_radius*3;
                     padding: 2rem;
-                    transform: translate(0, 78%);
+                    transform: translate(0, 72%);
 
                     &>.description {
                         @include flex(column, '', '', '', '');
