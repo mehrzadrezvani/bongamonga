@@ -14,9 +14,9 @@
             .title {
                 @include flex('', '', center, '', '');
 
-                span{
-                   font-size: 5rem;
-                   color: $purple;
+                span {
+                    font-size: 5rem;
+                    color: $purple;
                 }
 
                 p {
@@ -53,6 +53,7 @@
                     direction: rtl;
                     width: 100%;
                     height: 30rem;
+                    background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, black 100%);
                     border-radius: $border_radius*3;
                     padding: 2rem;
                     transform: translate(0, 72%);
@@ -88,10 +89,12 @@
 
                     .signiture {
                         @include flex('', center, center, '', '');
-                        img{
+
+                        img {
                             margin-left: 1rem;
                         }
-                        p{
+
+                        p {
                             color: $white;
                         }
                     }

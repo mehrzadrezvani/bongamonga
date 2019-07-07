@@ -1,0 +1,83 @@
+.filter {
+    @include flex(row, space-between, center, '', wrap);
+    background-color: rgba($color: $purple, $alpha: 0.3);
+    width: 100%;
+
+    >.row {
+        @include flex(row-reverse, space-between, center, '', '');
+
+        .search {
+            @include flex('', flex-end, center, 0 1 30%, '');
+            margin: 1rem 0;
+            border-radius: $border_radius*2.5;
+            box-shadow: 0.2rem 0.3rem 0.2rem rgba($color: $black, $alpha: 0.15);
+
+            input {
+                outline: none;
+                border: none;
+                padding: 1rem;
+                border-top-right-radius: 2.5rem;
+                border-bottom-right-radius: 2.5rem;
+                text-align: right;
+                width: 100%;
+
+                &::placeholder {
+                    direction: rtl;
+                    color: $font_color_gray_light;
+                }
+
+                &:placeholder-shown {}
+            }
+
+            &-btn {
+                width: 5%;
+                @include flex('', center, center, '', '');
+                background-color: $white;
+                border-top-left-radius: 2.5rem;
+                border-bottom-left-radius: 2.5rem;
+                cursor: pointer;
+
+                img {
+                    padding: .9rem 1.35rem;
+                    width: 4.2rem;
+                }
+            }
+        }
+
+        .categories {
+            @include flex('', space-between, center, '', '');
+            width: 68%;
+
+            .category {
+                @include flex('', space-between, center, '', '');
+                box-shadow: 0.2rem 0.3rem 0.2rem $font_color_gray_light;
+                border-radius: $border_radius*2.5;
+                background-color: $white;
+                overflow: hidden;
+                width: 23%;
+
+                p {
+                    color: $font_color_gray_light;
+                    font-size: 1.2rem;
+                }
+
+                .icon {
+                    height: 3.5rem;
+                    width: 3.5rem;
+                    padding: .5rem;
+                    background-color: $gray_bg;
+                    border-radius: 50%;
+                    margin: 0.1rem;
+                }
+
+                .arrow {
+                    font-size: 0.8rem;
+                    margin: 1rem 2rem;
+                    color: $purple;
+                }
+            }
+        }
+    }
+
+
+}

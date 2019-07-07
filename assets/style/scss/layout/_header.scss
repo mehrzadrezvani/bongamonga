@@ -4,7 +4,7 @@ header {
   position: sticky;
   top: 0;
   z-index: 100;
-  
+
   .row {
     .nav {
       @include flex('', space-between, center, '', '');
@@ -23,21 +23,30 @@ header {
         @include flex(row-reverse, space-between, center, '', '');
         width: 60%;
 
-        &Item {
-          height: 100%;
-          margin-right: 4rem;
-          position: relative;
-          font-size: 1.4rem;
-          transition: all 0.5s;
-          padding: 2rem 0;
+        &>.btn{
+          width: 25%;
+        }
 
-          a {
-            color: $white;
+        .items {
+          width: 100%;
+          @include flex('', center, center, '', '');
+
+          .menuItem {
+            @include flex('', center, center, '', '');
+            height: 100%;
+            width: 20%;
+            position: relative;
+            direction: rtl;
+            font-size: 1.4rem;
             transition: all 0.5s;
-          }
+            padding: 2rem 0;
+
+            a {
+              color: $white;
+              transition: all 0.5s;
+            }
 
 
-          &:not(:nth-child(1)) {
             &:before {
               content: '';
               transition: all 0.5s;
@@ -47,23 +56,23 @@ header {
               height: .5rem;
               background-color: $white;
               top: 50%;
-              right: 0;
+              right: 1.3rem;
               transform: translate(0, -50%);
-              right: -2rem;
-            }
-          }
 
-          &:hover {
-            a {
-              color: $purple;
             }
 
-            &:before {
-              width: 150%;
-              padding-left: 1rem;
+            &:hover {
+              a {
+                color: $purple;
+              }
 
-              height: 100%;
+              &:before {
+                width: calc(100% - 3.7rem);
+                padding-left: 1rem;
 
+                height: 100%;
+
+              }
             }
           }
         }

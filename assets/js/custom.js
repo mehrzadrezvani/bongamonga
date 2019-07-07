@@ -2,6 +2,9 @@ $(document).ready(function () {
   $('#sliders').owlCarousel({
     loop: true,
     slideSpeed: 300,
+    autoplay: true,
+    autoplayHoverPause:true,
+    autoplayTimeout:5000,
     navSpeed: 1000,
     singleItem: true,
     items: 1,

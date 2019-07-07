@@ -532,7 +532,8 @@ header {
       position: relative; }
       .footer .row .search img {
         position: absolute;
-        top: -40%; }
+        top: -30%;
+        width: 53%; }
       .footer .row .search p {
         color: #ffffff; }
       .footer .row .search > .description {
