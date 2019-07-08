@@ -3,8 +3,8 @@ $(document).ready(function () {
     loop: true,
     slideSpeed: 300,
     autoplay: true,
-    autoplayHoverPause:true,
-    autoplayTimeout:5000,
+    autoplayHoverPause: true,
+    autoplayTimeout: 5000,
     navSpeed: 1000,
     singleItem: true,
     items: 1,
@@ -46,5 +46,9 @@ $(document).ready(function () {
       $('.heroCont .container .title > .item ').removeClass('active').addClass('deactive');
     }
     $('.' + $(this).attr('data-src')).removeClass('deactive').addClass('active');
+  });
+
+  $('.categories .category').on('click', function () {
+    $(this).toggleClass('active');
   });
 });

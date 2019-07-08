@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'bonga';
-  src:  url('../../fonts/bonga.eot?c9iy5j');
-  src:  url('../../fonts/bonga.eot?c9iy5j#iefix') format('embedded-opentype'),
-    url('../../fonts/bonga.ttf?c9iy5j') format('truetype'),
-    url('../../fonts/bonga.woff') format('woff'),
-    url('../../fonts/bonga.svg?c9iy5j#bonga') format('svg');
+  src:  url('../../fonts/bonga.eot?2g0mo4');
+  src:  url('../../fonts/bonga.eot?2g0mo4#iefix') format('embedded-opentype'),
+    url('../../fonts/bonga.ttf?2g0mo4') format('truetype'),
+    url('../../fonts/bonga.woff?2g0mo4') format('woff'),
+    url('../../fonts/bonga.svg?2g0mo4#bonga') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,6 +24,27 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
+.icon-filter-results-button:before {
+  content: "\e914";
+}
+.icon-bathtub:before {
+  content: "\e90e";
+}
+.icon-call-answer:before {
+  content: "\e90f";
+}
+.icon-icons-like-dark:before {
+  content: "\e910";
+}
+.icon-icons-share-dark:before {
+  content: "\e911";
+}
+.icon-magnifying-glass:before {
+  content: "\e912";
+}
+.icon-parking-sign:before {
+  content: "\e913";
+}
 .icon-area:before {
   content: "\e900";
 }
@@ -32,7 +53,6 @@
 }
 .icon-bed:before {
   content: "\e902";
-  color: #4925e1;
 }
 .icon-building:before {
   content: "\e903";

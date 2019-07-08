@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="31" height="20.667" viewBox="0 0 31 20.667">
+  <defs>
+    <clipPath id="clip-path">
+      <rect width="31" height="20.667" fill="none"/>
+    </clipPath>
+  </defs>
+  <g id="filter-results-button" clip-path="url(#clip-path)">
+    <g id="filter-results-button-2" data-name="filter-results-button" transform="translate(0 -76.5)">
+      <g id="filter" transform="translate(0 76.5)">
+        <path id="Path_57" data-name="Path 57" d="M12.056,97.167h6.889V93.722H12.056ZM0,76.5v3.444H31V76.5ZM5.167,88.556H25.833V85.111H5.167Z" transform="translate(0 -76.5)" fill="#4925e1"/>
+      </g>
+    </g>
+  </g>
+</svg>
