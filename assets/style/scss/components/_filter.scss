@@ -1,4 +1,4 @@
-.filter {
+.headFilter {
     @include flex(row, space-between, center, '', wrap);
     background-color: rgba($color: $purple, $alpha: 0.3);
     width: 100%;
