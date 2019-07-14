@@ -241,7 +241,25 @@
 .itemsCont {
     .row {
         .titles {
+            width: 100%;
             @include flex('', flex-end, center, '', '');
+            margin-bottom: 2rem;
+
+            .title {
+                @include flex('', '', center, '', '');
+
+                span {
+                    font-size: 4rem;
+                    color: $purple;
+                }
+
+                p {
+                    margin-right: 1rem;
+                    color: $purple;
+                    font-size: 1.7rem;
+                    font-weight: 600;
+                }
+            }
         }
 
         #relatedSlider {

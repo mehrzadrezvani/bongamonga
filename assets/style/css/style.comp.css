@@ -615,19 +615,19 @@ header {
     justify-content: center;
     flex-direction: column;
     align-items: flex-end; }
-    .itemsCont .row .titles {
+    .itemsCont .row .itemsTitles {
       width: 100%;
       display: flex;
       justify-content: space-between;
       align-items: center;
       margin-bottom: 2rem; }
-      .itemsCont .row .titles .title {
+      .itemsCont .row .itemsTitles .title {
         display: flex;
         align-items: center; }
-        .itemsCont .row .titles .title span {
+        .itemsCont .row .itemsTitles .title span {
           font-size: 5rem;
           color: #4925E1; }
-        .itemsCont .row .titles .title p {
+        .itemsCont .row .itemsTitles .title p {
           margin-right: 1rem;
           color: #4925E1;
           font-size: 1.5rem;
@@ -1294,9 +1294,22 @@ header {
     align-items: center; }
 
 .itemsCont .row .titles {
+  width: 100%;
   display: flex;
   justify-content: flex-end;
-  align-items: center; }
+  align-items: center;
+  margin-bottom: 2rem; }
+  .itemsCont .row .titles .title {
+    display: flex;
+    align-items: center; }
+    .itemsCont .row .titles .title span {
+      font-size: 4rem;
+      color: #4925E1; }
+    .itemsCont .row .titles .title p {
+      margin-right: 1rem;
+      color: #4925E1;
+      font-size: 1.7rem;
+      font-weight: 600; }
 
 .itemsCont .row #relatedSlider .owl-nav {
   position: absolute;
