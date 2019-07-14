@@ -203,7 +203,7 @@ header {
   width: 100%;
   position: sticky;
   top: 0;
-  z-index: 100; }
+  z-index: 999; }
   header .row .nav {
     display: flex;
     justify-content: space-between;
@@ -445,7 +445,8 @@ header {
             border-bottom-left-radius: 2.5rem;
             cursor: pointer; }
             .heroCont .container .searchContainer .cont .search-btn span {
-              color: #5f5f5f; }
+              color: #D1D1D1;
+              font-size: 1.8rem; }
         .heroCont .container .searchContainer .cont .categories {
           display: flex;
           justify-content: space-between;
@@ -644,7 +645,8 @@ header {
         border-radius: 3rem;
         overflow: hidden;
         width: 22%;
-        height: 35rem; }
+        height: 35rem;
+        cursor: pointer; }
         .itemsCont .row .items .item:hover .container {
           transform: translate(0, 40%); }
         .itemsCont .row .items .item .container {
@@ -815,7 +817,7 @@ header {
         color: #D1D1D1;
         font-size: 1.4rem; }
 
-.filter {
+.headFilter {
   display: flex;
   justify-content: space-between;
   flex-direction: row;
@@ -823,12 +825,12 @@ header {
   flex-wrap: wrap;
   background-color: rgba(73, 37, 225, 0.3);
   width: 100%; }
-  .filter > .row {
+  .headFilter > .row {
     display: flex;
     justify-content: space-between;
     flex-direction: row-reverse;
     align-items: center; }
-    .filter > .row .search {
+    .headFilter > .row .search {
       display: flex;
       flex: 0 1 30%;
       justify-content: flex-end;
@@ -836,7 +838,7 @@ header {
       margin: 1rem 0;
       border-radius: 2.5rem;
       box-shadow: 0.2rem 0.3rem 0.2rem rgba(0, 0, 0, 0.15); }
-      .filter > .row .search input {
+      .headFilter > .row .search input {
         outline: none;
         border: none;
         padding: 1rem;
@@ -845,10 +847,11 @@ header {
         text-align: right;
         font-size: 1.2rem;
         width: 100%; }
-        .filter > .row .search input::placeholder {
+        .headFilter > .row .search input::placeholder {
           direction: rtl;
           color: #D1D1D1; }
-      .filter > .row .search-btn {
+      .headFilter > .row .search-btn {
+        align-self: stretch;
         width: 10%;
         display: flex;
         justify-content: center;
@@ -857,29 +860,29 @@ header {
         border-top-left-radius: 2.5rem;
         border-bottom-left-radius: 2.5rem;
         cursor: pointer; }
-        .filter > .row .search-btn img {
-          padding: .9rem 0.8rem;
-          width: 4.2rem; }
-    .filter > .row .categories {
+        .headFilter > .row .search-btn span {
+          color: #D1D1D1;
+          font-size: 1.8rem; }
+    .headFilter > .row .categories {
       display: flex;
       justify-content: space-between;
       align-items: center;
       width: 50%; }
-      .filter > .row .categories .category {
+      .headFilter > .row .categories .category {
         display: flex;
         justify-content: space-between;
         align-items: center;
-        box-shadow: 0.2rem 0.3rem 0.2rem #D1D1D1;
+        box-shadow: 0.2rem 0.3rem 0.2rem rgba(0, 0, 0, 0.15);
         border-radius: 2.5rem;
         background-color: #ffffff;
         overflow: hidden;
         transition: border 0.3s;
         width: 23%;
         border: 0.1rem solid transparent; }
-        .filter > .row .categories .category p {
+        .headFilter > .row .categories .category p {
           color: #D1D1D1;
           font-size: 1.2rem; }
-        .filter > .row .categories .category .icon {
+        .headFilter > .row .categories .category .icon {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -888,14 +891,14 @@ header {
           background-color: #ECECEC;
           border-radius: 50%;
           margin: 0.1rem; }
-          .filter > .row .categories .category .icon-house {
+          .headFilter > .row .categories .category .icon-house {
             font-size: 2.2rem; }
-          .filter > .row .categories .category .icon-bed {
+          .headFilter > .row .categories .category .icon-bed {
             font-size: 1.4rem; }
-          .filter > .row .categories .category .icon span {
+          .headFilter > .row .categories .category .icon span {
             padding: .5rem;
             color: #4925E1; }
-        .filter > .row .categories .category .arrow {
+        .headFilter > .row .categories .category .arrow {
           display: flex;
           justify-content: center;
           align-items: center;
@@ -903,12 +906,406 @@ header {
           width: 3.5rem;
           margin: 0.1rem;
           transition: 0.5s; }
-          .filter > .row .categories .category .arrow span {
+          .headFilter > .row .categories .category .arrow span {
             font-size: 0.8rem;
             color: #4925E1; }
-        .filter > .row .categories .category.active {
+        .headFilter > .row .categories .category.active {
           border: 0.1rem solid #4925E1; }
-          .filter > .row .categories .category.active .arrow {
+          .headFilter > .row .categories .category.active .arrow {
             transform: rotate(180deg); }
+    .headFilter > .row > .btn {
+      font-size: 1.5rem; }
+
+#location {
+  width: 49%;
+  align-self: stretch;
+  height: 40rem;
+  border-radius: 2.5rem; }
+
+.chart {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  border-radius: 2.5rem;
+  background-color: #ffffff;
+  width: 48%;
+  padding: 2rem;
+  align-self: stretch; }
+  .chart .title {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 2rem;
+    border-bottom: 1px solid #e8e8e8; }
+  .chart .legend {
+    align-self: flex-start;
+    width: 90%;
+    padding: 2rem 0; }
+    .chart .legend p {
+      font-size: 1.5rem;
+      position: relative;
+      padding: 0 3rem;
+      margin: 0 2rem; }
+      .chart .legend p::before {
+        content: '';
+        width: 1rem;
+        height: 1rem;
+        border-radius: 35%;
+        background-color: #3497fd;
+        position: absolute;
+        top: 50%;
+        left: 0;
+        transform: translate(0, -50%); }
+  .chart #chart {
+    align-self: center;
+    width: 90% !important;
+    height: 25rem !important; }
 
 /* pages */
+.itemsContainer .container {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin: 5rem 0; }
+  .itemsContainer .container .itemsCont {
+    width: 75%;
+    margin: 0 3% 0 0;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start; }
+    .itemsContainer .container .itemsCont > .items {
+      display: flex;
+      justify-content: space-between;
+      flex-wrap: wrap;
+      width: 100%; }
+      .itemsContainer .container .itemsCont > .items .item {
+        display: flex;
+        flex: 0 1 30%;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat;
+        border-radius: 3rem;
+        overflow: hidden;
+        margin-bottom: 2rem; }
+        .itemsContainer .container .itemsCont > .items .item:not(:nth-child(3n)) {
+          margin-right: 3%; }
+        .itemsContainer .container .itemsCont > .items .item:hover .container {
+          transform: translate(0, 20%); }
+        .itemsContainer .container .itemsCont > .items .item .container {
+          display: flex;
+          flex-direction: column;
+          align-items: center;
+          direction: rtl;
+          width: 100%;
+          height: 30rem;
+          background: linear-gradient(to bottom, rgba(0, 0, 0, 0) 10%, black 100%);
+          border-radius: 3rem;
+          padding: 2rem;
+          transform: translate(0, 73%); }
+          .itemsContainer .container .itemsCont > .items .item .container > .description {
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 60%; }
+            .itemsContainer .container .itemsCont > .items .item .container > .description p {
+              font-size: 1.5rem;
+              color: #ffffff; }
+            .itemsContainer .container .itemsCont > .items .item .container > .description .content {
+              display: flex;
+              align-items: center; }
+              .itemsContainer .container .itemsCont > .items .item .container > .description .content span {
+                color: #ffffff;
+                margin-left: 1.5rem; }
+            .itemsContainer .container .itemsCont > .items .item .container > .description .status {
+              font-weight: 100;
+              font-size: 1rem; }
+            .itemsContainer .container .itemsCont > .items .item .container > .description .name {
+              font-weight: 500; }
+          .itemsContainer .container .itemsCont > .items .item .container .signiture {
+            display: flex;
+            justify-content: center;
+            align-items: center; }
+            .itemsContainer .container .itemsCont > .items .item .container .signiture img {
+              margin-left: 1rem; }
+            .itemsContainer .container .itemsCont > .items .item .container .signiture p {
+              color: #ffffff; }
+  .itemsContainer .container .filters {
+    width: 22%;
+    background-color: #ffffff;
+    border-radius: 2.5rem;
+    display: flex;
+    flex-wrap: wrap;
+    padding: 3rem;
+    position: sticky;
+    top: 10rem; }
+    .itemsContainer .container .filters .content {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%; }
+      .itemsContainer .container .filters .content .title {
+        display: flex;
+        justify-content: flex-end;
+        align-items: center;
+        width: 100%;
+        border-bottom: 0.1rem solid rgba(73, 37, 225, 0.3);
+        margin-bottom: 1rem; }
+        .itemsContainer .container .filters .content .title span {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          color: #4925E1;
+          padding: 0.5rem;
+          height: 3.5rem;
+          width: 3.5rem;
+          margin: 0.1rem; }
+        .itemsContainer .container .filters .content .title p {
+          padding: 0.5rem 2rem;
+          color: #4925E1; }
+      .itemsContainer .container .filters .content .filter {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        margin: 1rem 0;
+        border-radius: 2.5rem;
+        border: 1px solid transparent;
+        transition: all 0.3s; }
+        .itemsContainer .container .filters .content .filter > span {
+          color: #4925E1;
+          font-size: 0.3rem;
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 3.5rem;
+          width: 3.5rem;
+          margin: 0.1rem;
+          transition: all 0.5s; }
+        .itemsContainer .container .filters .content .filter .icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 3.5rem;
+          width: 3.5rem;
+          background-color: #ECECEC;
+          border-radius: 50%;
+          margin: 0.1rem; }
+          .itemsContainer .container .filters .content .filter .icon-house {
+            font-size: 2.2rem; }
+          .itemsContainer .container .filters .content .filter .icon-bed {
+            font-size: 1.4rem; }
+          .itemsContainer .container .filters .content .filter .icon span {
+            padding: 0.5rem;
+            color: #4925E1; }
+        .itemsContainer .container .filters .content .filter p {
+          padding: 0.5rem 2rem;
+          color: #D1D1D1; }
+        .itemsContainer .container .filters .content .filter.active {
+          box-shadow: none;
+          border-radius: 2.5rem; }
+          .itemsContainer .container .filters .content .filter.active > span {
+            transform: rotate(-180deg); }
+
+.sliderContainer {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 4rem; }
+  .sliderContainer #propertySlider {
+    width: 100%;
+    position: relative;
+    z-index: 0; }
+    .sliderContainer #propertySlider .owl-stage-outer .owl-stage .owl-item {
+      opacity: 0.6; }
+      .sliderContainer #propertySlider .owl-stage-outer .owl-stage .owl-item.center {
+        opacity: 1; }
+    .sliderContainer #propertySlider .slide {
+      width: 100%; }
+      .sliderContainer #propertySlider .slide .image {
+        height: 60vh;
+        width: 100%;
+        border-radius: 2.5rem;
+        background-position: center;
+        background-size: cover;
+        background-repeat: no-repeat; }
+    .sliderContainer #propertySlider .owl-nav {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      font-size: 3rem;
+      color: #4925E1;
+      width: 80%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center; }
+
+.descriptions .row {
+  display: flex;
+  justify-content: space-between; }
+  .descriptions .row .content {
+    width: 22%;
+    background-color: #ffffff;
+    border-radius: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-end;
+    padding: 3rem; }
+    .descriptions .row .content .header {
+      width: 100%;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      margin-bottom: 1rem; }
+      .descriptions .row .content .header .icons {
+        display: flex;
+        justify-content: center;
+        align-items: center; }
+        .descriptions .row .content .header .icons span {
+          font-size: 1.3rem;
+          padding: 0.2rem;
+          color: #BBBCCD;
+          transition: 0.3s;
+          cursor: pointer; }
+          .descriptions .row .content .header .icons span:hover {
+            color: #4925E1; }
+      .descriptions .row .content .header h2 {
+        font-size: 1.7rem;
+        color: #4925E1; }
+    .descriptions .row .content .details {
+      display: flex;
+      justify-content: center;
+      flex-direction: column;
+      align-items: flex-end;
+      width: 100%;
+      margin-bottom: 1rem; }
+    .descriptions .row .content .area {
+      width: 100%;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      margin-bottom: 1rem; }
+      .descriptions .row .content .area p {
+        color: #000000; }
+      .descriptions .row .content .area .icon {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 3.5rem;
+        width: 3.5rem; }
+        .descriptions .row .content .area .icon span {
+          font-size: 1.5rem;
+          color: #000000; }
+    .descriptions .row .content .price {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 100%;
+      font-size: 1.6rem;
+      font-weight: 800; }
+      .descriptions .row .content .price p {
+        color: #000000; }
+    .descriptions .row .content .contact {
+      display: flex;
+      justify-content: flex-end;
+      flex-direction: column;
+      align-self: center;
+      border-top: 2px solid #4925E1;
+      width: 100%; }
+      .descriptions .row .content .contact .description {
+        margin: 2rem 0;
+        display: flex;
+        justify-content: flex-end;
+        align-items: center; }
+        .descriptions .row .content .contact .description .logo {
+          display: flex;
+          align-items: center;
+          margin-left: 2rem; }
+          .descriptions .row .content .contact .description .logo img {
+            width: 4rem; }
+        .descriptions .row .content .contact .description .desc {
+          display: flex;
+          align-items: center; }
+          .descriptions .row .content .contact .description .desc p {
+            font-size: 1.5rem;
+            color: #000000; }
+      .descriptions .row .content .contact .btn {
+        align-self: center;
+        width: 80%; }
+        .descriptions .row .content .contact .btn span {
+          color: #4925E1;
+          transition: 0.3s; }
+        .descriptions .row .content .contact .btn:hover span {
+          color: #ffffff; }
+  .descriptions .row .features {
+    width: 75%;
+    margin-right: 3%;
+    background-color: #ffffff;
+    border-radius: 2.5rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 4rem 0; }
+    .descriptions .row .features .propertyFeatures {
+      width: 90%;
+      display: flex;
+      justify-content: flex-start;
+      flex-direction: row-reverse;
+      align-items: center;
+      flex-wrap: wrap;
+      padding-bottom: 4rem;
+      border-bottom: 1px solid #4925E1; }
+      .descriptions .row .features .propertyFeatures .feature {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        width: 25%;
+        padding: 0 7%; }
+        .descriptions .row .features .propertyFeatures .feature .icon {
+          display: flex;
+          justify-content: center;
+          align-items: center;
+          height: 3.5rem;
+          width: 3.5rem; }
+          .descriptions .row .features .propertyFeatures .feature .icon span {
+            font-size: 1.7rem;
+            color: #4925E1; }
+        .descriptions .row .features .propertyFeatures .feature p {
+          font-size: 1.4rem;
+          color: #000000;
+          direction: rtl; }
+    .descriptions .row .features .propertyDescriptions {
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+      width: 90%;
+      padding: 2rem 0; }
+      .descriptions .row .features .propertyDescriptions p {
+        font-size: 1.4rem;
+        color: #000000; }
+
+.location-chart {
+  margin: 3rem 0; }
+  .location-chart .row {
+    display: flex;
+    justify-content: space-between;
+    align-items: center; }
+
+.itemsCont .row .titles {
+  display: flex;
+  justify-content: flex-end;
+  align-items: center; }
+
+.itemsCont .row #relatedSlider .owl-nav {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  font-size: 3rem;
+  color: #4925E1;
+  width: 105%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center; }
