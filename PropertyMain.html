@@ -12,7 +12,7 @@
     <script src="./assets/js/jquery.min.js"></script>
     <script src="./assets/js/owl.carousel.min.js"></script>
     <script src="./assets/js/leaflet.js"></script>
-    <script src="./assets/js/Chart.bundle.min.js"></script>
+  <script src="./assets/js/basics.js"></script>
     <title>bongaMonga - Property Main </title>
 </head>
 
@@ -226,7 +226,8 @@
             </div>
             <div class="owl-carousel" id="relatedSlider">
                 <div class="items">
-                    <a href="PropertyMain.html" class="item" style="background-image: url('./assets/images/image-1.png')">
+                    <a href="PropertyMain.html" class="item"
+                        style="background-image: url('./assets/images/image-1.png')">
                         <div class="container">
                             <div class="description">
                                 <div class="content name">
@@ -359,7 +360,8 @@
                     </a>
                 </div>
                 <div class="items">
-                    <a href="PropertyMain.html" class="item" style="background-image: url('./assets/images/image-1.png')">
+                    <a href="PropertyMain.html" class="item"
+                        style="background-image: url('./assets/images/image-1.png')">
                         <div class="container">
                             <div class="description">
                                 <div class="content name">
@@ -549,7 +551,9 @@
             id: 'mapbox.streets',
             accessToken: 'sk.eyJ1IjoibWVocnphZCIsImEiOiJjanh3ejVuNW8wMTNqM21tdnRpOWVhcDN1In0.6dkmuSWl3gW-09Lq8Ej95Q'
         }).addTo(Map);
-        L.marker([35.718671, 51.392749],{icon: bongaMarker}).addTo(Map);
+        L.marker([35.718671, 51.392749], {
+            icon: bongaMarker
+        }).addTo(Map);
 
 
 
@@ -588,7 +592,10 @@
                     }]
                 },
                 legend: {
-                    display: false
+                    display: false,
+                    labels: {
+                        fontFamily: 'iransans'
+                    }
                 }
             }
         });
