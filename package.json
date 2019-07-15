@@ -17,7 +17,7 @@
         "maintained node versions",
         "not dead"
     ],
-    "author": "Seyed Amir Mahdavi && Mehrzad Rezvani",
+    "author": "Mehrzad Rezvani",
     "license": "ISC",
     "devDependencies": {
         "autoprefixer": "^9.5.0",
@@ -25,5 +25,8 @@
         "node-sass": "^4.12.0",
         "npm-run-all": "^4.1.5",
         "postcss-cli": "^6.1.2"
+    },
+    "dependencies": {
+        "chart.js": "^2.8.0"
     }
 }

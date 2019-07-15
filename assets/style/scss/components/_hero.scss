@@ -30,13 +30,13 @@
         padding: 1rem 3rem;
         font-size: 1.5rem;
         border-radius: $border_radius*2.5;
-        background-color: $purple;
+        background-color: $white;
         border: 0.5rem double transparent;
-        color: $white;
+        color: $purple;
         transition: all 0.5s;
 
-        &:hover{
-          border: 0.5rem double $white;
+        &:hover {
+          border: 0.5rem double $purple;
         }
 
         span {
@@ -45,7 +45,7 @@
         }
 
         p {
-          color: $white;
+          color: $purple;
         }
 
         &:not(:last-child) {
@@ -54,12 +54,12 @@
       }
 
       .active {
-        background-color: $white;
-        color: $purple;
+        background-color: $purple;
+        color: $white;
         transition: all 0.3s;
 
         p {
-          color: $purple;
+          color: $white;
         }
       }
 
@@ -91,16 +91,17 @@
             border-bottom-right-radius: 2.5rem;
             text-align: right;
             width: 100%;
+            font-size: 1.2rem;
 
             &::placeholder {
               direction: rtl;
               color: $font_color_gray_light;
             }
 
-            &:placeholder-shown {}
           }
 
           &-btn {
+            align-self: stretch;
             width: 5%;
             @include flex('', center, center, '', '');
             background-color: $white;
@@ -108,9 +109,9 @@
             border-bottom-left-radius: 2.5rem;
             cursor: pointer;
 
-            img {
-              padding: .9rem 1rem;
-              width: 4.2rem;
+            span {
+              color: $gray_light;
+              font-size: 1.8rem;
             }
           }
         }
@@ -125,7 +126,9 @@
             border-radius: $border_radius*2.5;
             background-color: $white;
             overflow: hidden;
+            transition: border 0.3s;
             width: 23%;
+            border: 0.1rem solid transparent;
 
             p {
               color: $font_color_gray_light;
@@ -133,18 +136,48 @@
             }
 
             .icon {
+              @include flex('', center, center, '', '');
+
               height: 3.5rem;
               width: 3.5rem;
-              padding: .5rem;
               background-color: $gray_bg;
               border-radius: 50%;
               margin: 0.1rem;
+
+              &-house {
+                font-size: 2.2rem;
+              }
+
+              &-bed {
+                font-size: 1.4rem;
+              }
+
+              span {
+                padding: .5rem;
+                color: $purple;
+
+              }
             }
 
             .arrow {
-              font-size:  0.8rem;
-              margin: 1rem 2rem;
-              color: $purple;
+              @include flex('', center, center, '', '');
+              height: 3.5rem;
+              width: 3.5rem;
+              margin: 0.1rem;
+              transition: 0.5s;
+
+              span {
+                font-size: 0.8rem;
+                color: $purple;
+              }
+            }
+
+            &.active {
+              border: 0.1rem solid $purple;
+
+              .arrow {
+                transform: rotate(180deg);
+              }
             }
           }
         }

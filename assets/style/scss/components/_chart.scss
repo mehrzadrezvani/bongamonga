@@ -1,0 +1,45 @@
+.chart {
+    @include flex(column, center, '', '', '');
+    border-radius: $border_radius*2.5;
+    background-color: $white;
+    width: 48%;
+    padding: 2rem;
+    align-self: stretch;
+
+    .title {
+        width: 100%;
+        @include flex('', center, center, '', '');
+        padding-bottom: 2rem;
+        border-bottom: 1px solid $border-color; 
+    }
+
+    .legend {
+        align-self: flex-start;
+        width: 90%;
+        padding: 2rem 0;
+        p {
+            font-size: 1.5rem;
+            position: relative;
+            padding: 0 3rem;
+            margin: 0 2rem;
+
+            &::before{
+                content: '';
+                width: 1rem;
+                height: 1rem;
+                border-radius: 35%;
+                background-color: $chart_color;
+                position: absolute;
+                top: 50%;
+                left: 0;
+                transform: translate(0, -50%);
+            }
+        }
+    }
+
+    #chart {
+        align-self: center;
+        width: 90% !important;
+        height: 25rem !important;
+    }
+}

@@ -1,0 +1,118 @@
+.headFilter {
+    @include flex(row, space-between, center, '', wrap);
+    background-color: rgba($color: $purple, $alpha: 0.3);
+    width: 100%;
+
+    >.row {
+        @include flex(row-reverse, space-between, center, '', '');
+
+        .search {
+            @include flex('', flex-end, center, 0 1 30%, '');
+            margin: 1rem 0;
+            border-radius: $border_radius*2.5;
+            box-shadow: 0.2rem 0.3rem 0.2rem rgba($color: $black, $alpha: 0.15);
+
+            input {
+                outline: none;
+                border: none;
+                padding: 1rem;
+                border-top-right-radius: 2.5rem;
+                border-bottom-right-radius: 2.5rem;
+                text-align: right;
+                font-size: 1.2rem;
+                width: 100%;
+
+                &::placeholder {
+                    direction: rtl;
+                    color: $font_color_gray_light;
+                }
+            }
+
+            &-btn {
+                align-self: stretch;
+                width: 10%;
+                @include flex('', center, center, '', '');
+                background-color: $white;
+                border-top-left-radius: 2.5rem;
+                border-bottom-left-radius: 2.5rem;
+                cursor: pointer;
+
+                span {
+                    color: $gray_light;
+                    font-size: 1.8rem;
+                }
+            }
+        }
+
+        .categories {
+            @include flex('', space-between, center, '', '');
+            width: 50%;
+
+            .category {
+                @include flex('', space-between, center, '', '');
+                box-shadow: 0.2rem 0.3rem 0.2rem rgba($color: $black, $alpha: 0.15);
+                border-radius: $border_radius*2.5;
+                background-color: $white;
+                overflow: hidden;
+                transition: border 0.3s;
+                width: 23%;
+                border: 0.1rem solid transparent;
+
+                p {
+                    color: $font_color_gray_light;
+                    font-size: 1.2rem;
+                }
+
+                .icon {
+                    @include flex('', center, center, '', '');
+
+                    height: 3.5rem;
+                    width: 3.5rem;
+                    background-color: $gray_bg;
+                    border-radius: 50%;
+                    margin: 0.1rem;
+
+                    &-house {
+                        font-size: 2.2rem;
+                    }
+
+                    &-bed {
+                        font-size: 1.4rem;
+                    }
+
+                    span {
+                        padding: .5rem;
+                        color: $purple;
+
+                    }
+                }
+
+                .arrow {
+                    @include flex('', center, center, '', '');
+                    height: 3.5rem;
+                    width: 3.5rem;
+                    margin: 0.1rem;
+                    transition: 0.5s;
+
+                    span {
+                        font-size: 0.8rem;
+                        color: $purple;
+                    }
+                }
+
+                &.active {
+                    border: 0.1rem solid $purple;
+
+                    .arrow {
+                        transform: rotate(180deg);
+                    }
+                }
+            }
+
+        }
+
+        >.btn {
+            font-size: 1.5rem;
+        }
+    }
+}
