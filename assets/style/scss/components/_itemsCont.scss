@@ -6,7 +6,7 @@
         @include flex(column, center, flex-end, '', '');
 
 
-        .titles {
+        .itemsTitles {
             width: 100%;
             @include flex('', space-between, center, '', '');
             margin-bottom: 2rem;
@@ -41,6 +41,7 @@
                 overflow: hidden;
                 width: 22%;
                 height: 35rem;
+                cursor: pointer;
 
                 &:hover {
                     .container {
