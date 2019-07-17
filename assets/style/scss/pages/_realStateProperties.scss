@@ -1,0 +1,79 @@
+.row {
+    .agency-description-container {
+        @include flex(column, '', center, '', '');
+
+        .search {
+            @include flex('', center, center, '', '');
+            width: 80%;
+            margin: 5rem auto;
+            border-radius: $border_radius*2.5;
+            box-shadow: 0rem 0.3rem 1rem rgba($color: $black, $alpha: 0.3);
+
+            input {
+                outline: none;
+                border: none;
+                padding: 1.35rem;
+                border-top-right-radius: 2.5rem;
+                border-bottom-right-radius: 2.5rem;
+                text-align: right;
+                width: 100%;
+                font-size: 1.2rem;
+
+                &::placeholder {
+                    direction: rtl;
+                    color: $font_color_gray_light;
+                }
+
+            }
+
+            &-btn {
+                align-self: stretch;
+                width: 5%;
+                @include flex('', center, center, '', '');
+                background-color: $white;
+                border-top-left-radius: 2.5rem;
+                border-bottom-left-radius: 2.5rem;
+                cursor: pointer;
+
+                span {
+                    color: $gray_light;
+                    font-size: 1.8rem;
+                }
+            }
+        }
+
+
+        .information {
+            @include flex('', space-between, center, '', '');
+            width: 100%;
+            padding: 2rem;
+            direction: rtl;
+            background-color: $white;
+            border-radius: $border_radius*1.5;
+            .title {
+                width: 30%;
+                @include flex('', space-between, center, '', '');
+                padding-left: 2rem;
+                border-left: 1px solid $gray_light;
+
+                .logo {
+                    width: 40%;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                    align-self: stretch;
+                    margin: 0 1.5rem;
+                }
+
+                .location {
+                    width: 60%;
+                }
+            }
+
+            .context {
+                width: 70%;
+                padding: 0 2rem;
+            }
+        }
+    }
+}

@@ -1,7 +1,7 @@
 .articlesCont {
     @include flex(row, space-between, '', '', '');
     width: 100%;
-    margin: 5rem 0;
+    margin: 5rem 0 20rem 0; 
 
     #sliders {
         width: 30%;

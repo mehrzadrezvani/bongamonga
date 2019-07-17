@@ -2,7 +2,6 @@
     background-color: $purple;
     position: relative;
     font-size: 1.7rem;
-    margin-top: 20rem;
     padding-bottom: 5rem;
 
     .row {
@@ -29,7 +28,7 @@
             }
         }
 
-        .search {
+        >.search {
             @include flex(column, center, center, 0 1 33%, '');
             position: relative;
 
