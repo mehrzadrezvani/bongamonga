@@ -238,10 +238,9 @@
     }
 }
 
-.relatedItemsCont {
-    margin-bottom: 15rem;
-
+.itemsCont {
     .row {
+        // margin-bottom: 15rem;
         .titles {
             width: 100%;
             @include flex('', flex-end, center, '', '');
