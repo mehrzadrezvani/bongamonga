@@ -1294,26 +1294,26 @@ header {
     justify-content: space-between;
     align-items: center; }
 
-.itemsCont {
+.relatedItemsCont {
   margin-bottom: 15rem; }
-  .itemsCont .row .titles {
+  .relatedItemsCont .row .titles {
     width: 100%;
     display: flex;
     justify-content: flex-end;
     align-items: center;
     margin-bottom: 2rem; }
-    .itemsCont .row .titles .title {
+    .relatedItemsCont .row .titles .title {
       display: flex;
       align-items: center; }
-      .itemsCont .row .titles .title span {
+      .relatedItemsCont .row .titles .title span {
         font-size: 4rem;
         color: #4925E1; }
-      .itemsCont .row .titles .title p {
+      .relatedItemsCont .row .titles .title p {
         margin-right: 1rem;
         color: #4925E1;
         font-size: 1.7rem;
         font-weight: 600; }
-  .itemsCont .row #relatedSlider .owl-nav {
+  .relatedItemsCont .row #relatedSlider .owl-nav {
     position: absolute;
     top: 50%;
     left: 50%;
