@@ -1,10 +1,10 @@
 @font-face {
   font-family: 'bonga';
-  src:  url('../../fonts/bonga.eot?54ypvh');
-  src:  url('../../fonts/bonga.eot?54ypvh#iefix') format('embedded-opentype'),
-    url('../../fonts/bonga.ttf?54ypvh') format('truetype'),
-    url('../../fonts/bonga.woff?54ypvh') format('woff'),
-    url('../../fonts/bonga.svg?54ypvh#bonga') format('svg');
+  src:  url('../../fonts/bonga.eot?1n3sy8');
+  src:  url('../../fonts/bonga.eot?1n3sy8#iefix') format('embedded-opentype'),
+    url('../../fonts/bonga.ttf?1n3sy8') format('truetype'),
+    url('../../fonts/bonga.woff?1n3sy8') format('woff'),
+    url('../../fonts/bonga.svg?1n3sy8#bonga') format('svg');
   font-weight: normal;
   font-style: normal;
 }
@@ -24,8 +24,14 @@
   -moz-osx-font-smoothing: grayscale;
 }
 
-.icon-location:before {
+.icon-email:before {
   content: "\e919";
+}
+.icon-maps-and-flags:before {
+  content: "\e91b";
+}
+.icon-phone-call:before {
+  content: "\e91c";
 }
 .icon-booking:before {
   content: "\e91a";

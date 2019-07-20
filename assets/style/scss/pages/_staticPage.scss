@@ -1,0 +1,59 @@
+.staticPage {
+    >.row {
+        direction: rtl;
+
+        .staticPage-title {
+            width: 100%;
+            position: relative;
+            padding: 3rem;
+            @include flex('', '', center, '', '');
+
+            h2 {
+                color: $purple;
+                font-size: 1.8rem
+            }
+
+            &:before {
+                content: '';
+                width: 0.5rem;
+                height: 0.5rem;
+                border-radius: 100%;
+                background-color: $purple;
+                position: absolute;
+                right: 1rem;
+                top: 50%;
+            }
+        }
+
+        .description-container {
+            @include flex(column, center, center, '', '');
+            background-color: $purple;
+            padding-bottom: 1rem;
+            border-radius: $border_radius;
+            margin-bottom: 10rem;
+
+            .content {
+                background-color: $white;
+                border-radius: $border_radius;
+                padding: 3rem;
+                box-shadow: 0 0.3rem 0.6rem rgba($color: $box-shadow, $alpha: 0.1);
+                @include flex(column, center, center, '', '');
+
+                .image {
+                    width: 100%;
+                    height: 15rem;
+                    border-radius: $border_radius;
+                    background-position: center;
+                    background-size: cover;
+                    background-repeat: no-repeat;
+                }
+
+
+                p {
+                    color: $gray_dark;
+                    font-size: 1.4rem;
+                }
+            }
+        }
+    }
+}

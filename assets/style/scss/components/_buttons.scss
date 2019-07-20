@@ -47,7 +47,7 @@
             }
 
             &:after {
-                height: 600%;
+                height: 1000%;
                 opacity: 1;
             }
         }
@@ -73,7 +73,7 @@
             z-index: -1;
             background: $white;
             position: absolute;
-            transition: all 00.5s;
+            transition: all 0.5s;
             transform: translateX(-50%) translateY(-50%) rotate(-45deg);
         }
 
@@ -85,7 +85,7 @@
             }
 
             &:after {
-                height: 600%;
+                height: 9000%;
                 opacity: 1;
             }
         }
